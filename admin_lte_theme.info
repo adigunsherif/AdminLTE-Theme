@@ -1,0 +1,30 @@
+name = Drupal Admin LTE
+description = Admin LTE Template developed by Abdullah Almsaeed and Drupalized by Adigun Sherif A at <a href="reboundmedia.com.ng">Reboundmedia<a/>
+core = 7.x
+
+base theme = bootstrap
+
+stylesheets[all][] = css/fontawesome/css/font-awesome.css
+stylesheets[all][] = css/AdminLTE.min.css
+stylesheets[all][] = css/custom.css
+stylesheets[all][] = css/skins/skin-green.min.css
+stylesheets[all][] = css/media.css
+
+scripts[] = js/app.min.js
+scripts[] = js/adminlte.min.js
+
+
+
+regions[header_right]   = Header Right
+
+regions[sidebar_first]   = First sidebar
+
+regions[content_top_first]   = First Top Block
+regions[content_top_second]   = Second Top Block
+regions[content_top_third]   = Third Top Block
+regions[content_top_fourth]   = Fourth Top Block
+
+regions[content]         = Content
+
+regions[sidebar_second]         = Second sidebar
+regions[control_sidebar]         = Control sidebar
