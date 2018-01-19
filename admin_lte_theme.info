@@ -4,7 +4,7 @@ core = 7.x
 
 base theme = bootstrap
 
-stylesheets[all][] = css/fontawesome/css/font-awesome.css
+stylesheets[all][] = css/font-awesome.css
 stylesheets[all][] = css/AdminLTE.min.css
 stylesheets[all][] = css/custom.css
 stylesheets[all][] = css/skins/skin-green.min.css
