@@ -1,13 +1,9 @@
 About Drupal Admin LTE
 ====================
-Admin LTE is a Drupal 7 theme. The theme is not dependent on any
-core theme. Its very light weight for fast loading with modern look.
+Admin LTE is a Drupal 7 theme. The theme is dependent on the bootstrap base theme. Its very light weight for fast loading with modern look.
   Simple and clean design
   Drupal standards compliant
-  Implementation of a JS Slideshow
   Multi-level drop-down menus
-  Footer with 4 regions
-  A total of 10 regions
   Compatible and tested on IE7, IE8, IE9+, Opera, Firefox, Chrome browsers
 
 Browser compatibility:
