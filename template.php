@@ -3,7 +3,7 @@
  * Implements hook_html_head_alter().
  * This will overwrite the default meta character type tag with HTML5 version.
  */
-function admin_lte_theme_html_head_alter(&$head_elements) {
+function adminlte_theme_html_head_alter(&$head_elements) {
   $head_elements['system_meta_content_type']['#attributes'] = array(
     'charset' => 'utf-8'
   );
@@ -12,7 +12,7 @@ function admin_lte_theme_html_head_alter(&$head_elements) {
 /**
  * Insert themed breadcrumb page navigation at top of the node content.
  */
-function admin_lte_theme_breadcrumb($variables) {
+function adminlte_theme_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
   if (!empty($breadcrumb)) {
     // Use CSS to hide titile .element-invisible.
@@ -28,7 +28,7 @@ function admin_lte_theme_breadcrumb($variables) {
 /**
  * Override or insert variables into the page template.
  */
-function admin_lte_theme_preprocess_page(&$variables) {
+function adminlte_theme_preprocess_page(&$variables) {
   if (isset($variables['main_menu'])) {
     $variables['main_menu'] = theme('links__system_main_menu', array(
       'links' => $variables['main_menu'],
@@ -67,7 +67,7 @@ function admin_lte_theme_preprocess_page(&$variables) {
 /**
  * Duplicate of theme_menu_local_tasks() but adds clearfix to tabs.
  */
-function admin_lte_theme_menu_local_tasks(&$variables) {
+function adminlte_theme_menu_local_tasks(&$variables) {
   $output = '';
 
   if (!empty($variables['primary'])) {
@@ -88,7 +88,7 @@ function admin_lte_theme_menu_local_tasks(&$variables) {
 /**
  * Override or insert variables into the node template.
  */
-function admin_lte_theme_preprocess_node(&$variables) {
+function adminlte_theme_preprocess_node(&$variables) {
   $node = $variables['node'];
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
@@ -96,7 +96,7 @@ function admin_lte_theme_preprocess_node(&$variables) {
 }
 
 
-function admin_lte_theme_page_alter($page) {
+function adminlte_theme_page_alter($page) {
   // <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   $viewport = array(
     '#type' => 'html_tag',
@@ -116,14 +116,14 @@ function admin_lte_theme_page_alter($page) {
  * Add bootstrap 'sidebar-menu' class to the first ul in sidebar menu
  */
 
-function admin_lte_theme_menu_tree($variables) {
+function adminlte_theme_menu_tree($variables) {
   return '<ul class="menu sidebar-menu">' . $variables['tree'] . '</ul>';
 }
 
 /**
  * Implements theme_menu_link().
  */
-function admin_lte_theme_menu_link(array $variables) {
+function adminlte_theme_menu_link(array $variables) {
 
   switch($variables['theme_hook_original']){
 

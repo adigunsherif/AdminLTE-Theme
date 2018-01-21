@@ -1,3 +1,19 @@
 .custom-section{
   padding: 10px;
 }
+.navbar-custom-menu{
+	max-height: 50px;
+}
+
+.well{
+	background: none;
+	padding: 5px;
+}
+
+.sidebar .content {
+	padding: 2px;
+}
+
+.nav > li > a {
+	padding: 8px;
+}

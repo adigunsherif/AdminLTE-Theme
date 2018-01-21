@@ -7,18 +7,18 @@
  * @param $form_state
  *   The form state.
  */
-function admin_lte_theme_form_system_theme_settings_alter(&$form, &$form_state) {
+function adminlte_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 
-  $form['admin_lte_theme_settings'] = array(
+  $form['adminlte_theme_settings'] = array(
     '#type' => 'fieldset',
-    '#title' => t('admin_lte_theme Theme Settings'),
+    '#title' => t('adminlte_theme Theme Settings'),
     '#collapsible' => FALSE,
     '#collapsed' => FALSE,
   );
-  $form['admin_lte_theme_settings']['breadcrumbs'] = array(
+  $form['adminlte_theme_settings']['breadcrumbs'] = array(
     '#type' => 'checkbox',
     '#title' => t('Show breadcrumbs in a page'),
-    '#default_value' => theme_get_setting('breadcrumbs','admin_lte_theme'),
+    '#default_value' => theme_get_setting('breadcrumbs','adminlte_theme'),
     '#description'   => t("Check this option to show breadcrumbs in page. Uncheck to hide."),
   );
 
