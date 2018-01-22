@@ -122,7 +122,7 @@ function adminlte_theme_menu_tree($variables) {
 
 /**
  * Implements theme_menu_link().
- */
+ 
 function adminlte_theme_menu_link(array $variables) {
 
   switch($variables['theme_hook_original']){
@@ -149,3 +149,4 @@ function adminlte_theme_menu_link(array $variables) {
   }
 
 }
+*/
